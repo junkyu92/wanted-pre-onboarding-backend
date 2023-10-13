@@ -1,5 +1,6 @@
 # wanted-pre-onboarding-backend
 Java & Spring Boot Project
+
 JPA & MySql
  
 MODEL
@@ -27,8 +28,11 @@ apply_history
 - user_id (user)
 
 요구사항
+
 1. 채용공고 등록
+
 request - /api/v1/job-listing (POST)
+
   {
     "company_id":1,
     "position":"백엔드 주니어 개발자",
@@ -37,8 +41,10 @@ request - /api/v1/job-listing (POST)
     "tech_stack":"Python"
   }
 
-2. 채용공고 수정
+3. 채용공고 수정
+
 request - /api/v1/job-listing (PATCH)
+
   {
     "job_listing_id":1,
     "position":"백엔드 주니어 개발자",
@@ -47,15 +53,20 @@ request - /api/v1/job-listing (PATCH)
     "tech_stack":"Python"
   }
 
-4. 채용공고 삭제
+5. 채용공고 삭제
+
 request - /api/v1/job-listing (DELETE)
+
   {
     "job_listing_id":1,
   }
    
 4-1. 채용공고 목록 조회
+
 request - /api/v1/job-listings (GET)
+
 response
+
   [
   	{
   		"job_listing_id": 채용공고_id,
@@ -71,8 +82,11 @@ response
    ]
   
 4-2. 채용공고 검색
+
 request - /api/v1/job-listings?search=? (GET)
+
 response
+
   [
   	{
   		"job_listing_id": 채용공고_id,
@@ -88,8 +102,11 @@ response
    ]
 
 5. 채용 상세 페이지
+   
 request - /api/v1/job-listing (GET)
+
 response
+
   {
     "job_listing_id": 채용공고_id,
     "name":"원티드랩",
@@ -102,26 +119,14 @@ response
     "otherJobListing":[job_listing_id, job_listing_id, ..] id List
   }
 
-6. 채용공고 지원
+7. 채용공고 지원
+
 request - /api/v1/job-listing/apply (POST)
+
 {
 	"job_listing_id": 채용공고_id,
   "user_id": 사용자_id
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
