@@ -36,9 +36,13 @@ request - /api/v1/job-listing (POST)
   {
   
     "company_id":1,
+    
     "position":"백엔드 주니어 개발자",
+    
     "reward":1000000,
+    
     "description":"원티드랩에서 백엔드 주니어 개발자를 채용합니다. 자격요건은..",
+    
     "tech_stack":"Python"
     
   }
