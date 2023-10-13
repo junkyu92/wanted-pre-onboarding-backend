@@ -23,8 +23,8 @@ job_listing
 - description
 - tech_stack
 
-apply_history
-- apply_history_id
+apply
+- apply_id
 - job_listing_id (job_listing)
 - user_id (user)
 
@@ -134,12 +134,11 @@ response
 	
 	}
 
-7. 채용공고 지원
+6. 채용공고 지원
 
 request - /api/v1/job-listing/apply (POST)
 
 	{
-	
 		"job_listing_id": 채용공고_id,
 		"user_id": 사용자_id
 	
