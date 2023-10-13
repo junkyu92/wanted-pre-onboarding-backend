@@ -136,7 +136,7 @@ response
 
 6. 채용공고 지원
 
-request - /api/v1/job-listing/apply (POST)
+request - /api/v1/apply (POST)
 
 	{
 		"job_listing_id": 채용공고_id,
