@@ -3,6 +3,7 @@ Java & Spring Boot Project
 JPA & MySql
 
 MODEL
+
 company
 - company_id
 - name
