@@ -24,6 +24,7 @@ job_listing
 - tech_stack
 
 apply_history
+- apply_history_id
 - job_listing_id (job_listing)
 - user_id (user)
 
