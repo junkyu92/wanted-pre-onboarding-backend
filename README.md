@@ -77,13 +77,13 @@ response
   
   	{
    
-  		"job_listing_id": 채용공고_id,
-  	  "name":"원티드랩",
-  	  "country":"한국",
-  	  "region":"서울",
-  	  "position":"백엔드 주니어 개발자",
-  	  "reward":1500000,
-  	  "tech_stack":"Python"
+			"job_listing_id": 채용공고_id,
+			"name":"원티드랩",
+			"country":"한국",
+			"region":"서울",
+			"position":"백엔드 주니어 개발자",
+			"reward":1500000,
+			"tech_stack":"Python"
      
   	},
     ...
