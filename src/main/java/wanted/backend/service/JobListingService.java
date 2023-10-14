@@ -57,8 +57,13 @@ public class JobListingService {
 
     //3. 채용공고 삭제
     public ResponseEntity<String> deleteJobListing(Long id) {
-        jobListingRepository.deleteById(id);
-        return ResponseEntity.ok("채용공고가 삭제되었습니다.");
+        Optional<JobListing> jobListing = jobListingRepository.findById(id);
+        if (jobListing.isPresent()) {
+            jobListingRepository.deleteById(id);
+            return ResponseEntity.ok("채용공고가 삭제되었습니다.");
+        }else{
+            return ResponseEntity.badRequest().body("채용공고Id "+id+"을 찾을 수 없습니다.");
+        }
     }
 
     //4-1. 채용공고 목록 조회
